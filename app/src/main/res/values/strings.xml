@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_category">Activity_category</string>
+    <string name="Text_one_activity">Твоя личная книга рецептов.</string>
+    <string name="button1_one_activity">Записать рецепт</string>
+    <string name="button2_one_activity">Мои рецепты</string>
+    <string name="btn2_category">Салаты</string>
+    <string name="text_category">Категории</string>
+    <string name="btn1_category">Горячее</string>
+    <string name="btn4_category">Супы</string>
+    <string name="btn5_category">Закуски</string>
+    <string name="btn3_category">Десерты</string>
+    <string name="btn6_category">Напитки</string>
+    <string name="recipe_name">Рецепт 1</string>
+    <string name="recipe">TextView</string>
+    <string name="texе_recire">TextView</string>
+    <string name="text_category">Категории</string>
+    <string name="btn1_category_hot">Горячее</string>
+    <string name="btn4_category_soup">Супы</string>
+    <string name="btn2_category_snacks">Закуски</string>
+    <string name="btn5_category_salads">Салаты</string>
+    <string name="btn3_category_desserts">Дессерты</string>
+    <string name="btn6_category_beverages">Напитки</string>
+    <string name="text_recipe">TextView</string>
+    <string name="btn_redactor_recipe">Редактировать</string>
+    <string name="btn_delete_recipe">Удалить</string>
+    <string name="recipe_text">Текст рецепта</string>
+    <string name="recepe_name_text">Рецепт</string>
+</resources>
