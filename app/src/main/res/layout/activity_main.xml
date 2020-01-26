@@ -10,13 +10,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        >
+        android:background="@drawable/new_bg">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/choose_category" />
+            android:text="@string/choose_category"
+            android:textSize="20dp"
+            android:textStyle="normal|italic"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:padding="3dp"
+            android:textColor="@android:color/black"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,19 +41,29 @@
                     android:id="@+id/hot"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/hot" />
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/hot"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
 
                 <Button
                     android:id="@+id/snack"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/snack" />
+                    android:background="@color/colorPrimary"
+                    android:text="@string/snack"
+                    android:layout_margin="5dp"
+                    android:textColor="@android:color/white"/>
 
                 <Button
                     android:id="@+id/dessert"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/dessert" />
+                    android:background="@color/colorPrimary"
+                    android:text="@string/dessert"
+                    android:layout_margin="5dp"
+                    android:textColor="@android:color/white"/>
 
             </LinearLayout>
 
@@ -60,19 +77,28 @@
                     android:id="@+id/soup"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/soup" />
+                    android:background="@color/colorPrimary"
+                    android:text="@string/soup"
+                    android:layout_margin="5dp"
+                    android:textColor="@android:color/white"/>
 
                 <Button
                     android:id="@+id/salad"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/salad" />
+                    android:background="@color/colorPrimary"
+                    android:text="@string/salad"
+                    android:layout_margin="5dp"
+                    android:textColor="@android:color/white"/>
 
                 <Button
                     android:id="@+id/drink"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/drink" />
+                    android:background="@color/colorPrimary"
+                    android:text="@string/drink"
+                    android:layout_margin="5dp"
+                    android:textColor="@android:color/white"/>
 
             </LinearLayout>
 
@@ -81,13 +107,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
 
             <Button
                 android:id="@+id/add"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/add_recipe" />
+                android:background="@color/colorPrimary"
+                android:text="@string/add_recipe"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/white"/>
         </LinearLayout>
 
     </LinearLayout>

@@ -2,10 +2,10 @@ package com.example.myapplication.enums;
 
 public enum CategoryEnum {
     HOT("Горячее"),
-    DESSERT("Десерт"),
-    SOUP("Суп"),
+    DESSERT("Десерты"),
+    SOUP("Супы"),
     SNACK("Закуски"),
-    SALAD("Салат"),
+    SALAD("Салаты"),
     DRINK("Напитки");
 
     private String value;

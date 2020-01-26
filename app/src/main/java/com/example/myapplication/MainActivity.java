@@ -6,6 +6,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.myapplication.enums.CategoryEnum;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -13,24 +15,37 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private View.OnClickListener buttonListener = v -> {
+        Intent intent = new Intent(MainActivity.this, RecipeListActivity.class);
+        Bundle bundle = new Bundle();
         switch (v.getId()) {
             case R.id.hot:
-                System.out.println("HOT clicked");
+                bundle.putSerializable("category", CategoryEnum.HOT);
+                intent.putExtras(bundle);
+                startActivity(intent);
                 break;
             case R.id.dessert:
-                System.out.println("DESSERT clicked");
+                bundle.putSerializable("category", CategoryEnum.DESSERT);
+                intent.putExtras(bundle);
+                startActivity(intent);
                 break;
             case R.id.salad:
-                System.out.println("SALAD clicked");
+                bundle.putSerializable("category", CategoryEnum.SALAD);
+                intent.putExtras(bundle);
+                startActivity(intent);
                 break;
             case R.id.snack:
-                System.out.println("SNACK clicked");
-                break;
+                bundle.putSerializable("category", CategoryEnum.SNACK);
+                intent.putExtras(bundle);
+                startActivity(intent);                   break;
             case R.id.soup:
-                System.out.println("SOUP clicked");
+                bundle.putSerializable("category", CategoryEnum.SOUP);
+                intent.putExtras(bundle);
+                startActivity(intent);
                 break;
             case R.id.drink:
-                System.out.println("DRINK clicked");
+                bundle.putSerializable("category", CategoryEnum.DRINK);
+                intent.putExtras(bundle);
+                startActivity(intent);
                 break;
             case R.id.add:
                 startActivity(new Intent(MainActivity.this, EditActivity.class));

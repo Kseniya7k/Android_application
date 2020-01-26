@@ -37,6 +37,7 @@ public class EditActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle("Создание рецепта");
         setContentView(R.layout.activity_edit);
         initEditTexts();
         initIngredientList();
@@ -65,9 +66,11 @@ public class EditActivity extends AppCompatActivity {
         Button addIngredients = findViewById(R.id.plus);
 
         addIngredients.setOnClickListener(view -> {
-            Ingredient newIng = new Ingredient(ingredName.getText().toString(),
+            Ingredient newIng = new Ingredient(
+                    ingredName.getText().toString(),
                     Integer.parseInt(ingredAmount.getText().toString()),
-                    ingredUnit.getText().toString());
+                    ingredUnit.getText().toString()
+            );
             ingredients.add(newIng);
             ingAdapter.add(newIng);
         });
@@ -77,7 +80,11 @@ public class EditActivity extends AppCompatActivity {
             Recipe recipe = new Recipe(recipeName.getText().toString(), ingredients,
                     description.getText().toString(), category);
             AppUtil.addRecipe(recipe);
-            startActivity(new Intent(EditActivity.this, RecipeListActivity.class));
+            Intent intent = new Intent(EditActivity.this, RecipeListActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("category", recipe.getCategory());
+            intent.putExtras(bundle);
+            startActivity(intent);
         });
 
         cancelBtn.setOnClickListener(view -> {

@@ -9,9 +9,9 @@
     <string name="drink">Напитки</string>
     <string name="add_recipe">Добавить Рецепт</string>
     <string name="recipe_name">Название рецепта</string>
-    <string name="ingredient">Ингредиент</string>
-    <string name="amount">Количество</string>
-    <string name="unit">Ед.Измерения</string>
+    <string name="ingredient">Ингр.</string>
+    <string name="amount">Кол-во</string>
+    <string name="unit">Ед.из-я</string>
     <string name="save">Сохранить</string>
     <string name="cancel">Отмена</string>
     <string name="description">Приготовление</string>
@@ -19,4 +19,5 @@
     <string name="save_recipe">Сохранить</string>
     <string name="delete_recipe">Удалить</string>
     <string name="refactor_recipe">Редактировать</string>
+    <string name="text_description">Приготовление:</string>
 </resources>

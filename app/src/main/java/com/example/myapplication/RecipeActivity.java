@@ -19,6 +19,7 @@ public class RecipeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle("Рецепт");
         setContentView(R.layout.activity_recipe);
         String recipeName = getIntent().getStringExtra("recipeName");
         Recipe recipe = AppUtil.getRecipeByName(recipeName);

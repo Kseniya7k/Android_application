@@ -11,7 +11,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.myapplication.EditActivity;
 import com.example.myapplication.R;
 import com.example.myapplication.RecipeActivity;
 import com.example.myapplication.model.Recipe;
@@ -26,10 +25,10 @@ public class RecipeListAdapter extends ArrayAdapter<Recipe> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        final Context context = getContext();
-        final View view = LayoutInflater.from(context).inflate(R.layout.recipe_name, null);
-        final Recipe recipe = getItem(position);
-        final TextView textView = view.findViewById(R.id.name);
+        Context context = getContext();
+        View view = LayoutInflater.from(context).inflate(R.layout.recipe_name, null);
+        Recipe recipe = getItem(position);
+        TextView textView = view.findViewById(R.id.name_test_recipe);
 
         textView.setText(recipe.getName());
         textView.setOnClickListener(tv -> {
