@@ -27,10 +27,7 @@ public class RecipeListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recipes_list);
         RecipeListAdapter recipeListAdapter = new RecipeListAdapter(RecipeListActivity.this);
         recipes = AppUtil.getRecipesByCategory(category);
-        for (Recipe recipe : recipes) {
-            System.out.println(recipe);
-            recipeListAdapter.add(recipe);
-        }
+        recipeListAdapter.addAll(recipes);
 
         recipeListView = findViewById(R.id.recipe_list);
         recipeListView.setAdapter(recipeListAdapter);
